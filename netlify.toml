@@ -1,0 +1,12 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  REACT_APP_SERVER_URL = "https://api.rexy.ai"
+  REACT_APP_URL = "https://explorer.rexy.ai"
+
+[context.dev.environment]
+  REACT_APP_SERVER_URL = "https://api.rexy.ai:8080"
+  REACT_APP_URL = "https://dev.explorer.rexy.ai"
